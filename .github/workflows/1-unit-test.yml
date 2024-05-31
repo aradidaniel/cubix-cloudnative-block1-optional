@@ -8,6 +8,8 @@ on:
     branches:
       - '!main'
       - 'ci/*'
+    branches-ignore: 
+      -main
 
 jobs:
   unit-test:
