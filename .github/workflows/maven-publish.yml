@@ -26,8 +26,6 @@ jobs:
         cache: 'maven'
     - name: Check Java version
       run: java -version
-      
-    - name: Run tests
-      run: ./mvnw clean test
 
-
+    - name: Build and run integration tests
+      run: ./mvnw clean integration-test
