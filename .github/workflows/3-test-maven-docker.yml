@@ -61,11 +61,6 @@ jobs:
     - name: Build with Maven
       run: ./mvnw clean package verify
 
-    - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-
     - name: Upload artifact for Docker job
       uses: actions/upload-artifact@v3
       with:
