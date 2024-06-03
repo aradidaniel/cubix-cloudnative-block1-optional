@@ -10,7 +10,7 @@ import java.time.LocalTime;
 public class DemoService {
 
     public DemoResponse createDemoResponse(String message) {
-        String test1;
+        String test2;
         LocalDate date = LocalDate.now();
         LocalTime time = LocalTime.now();
         return new DemoResponse(date, time, message);
